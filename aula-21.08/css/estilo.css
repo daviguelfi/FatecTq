@@ -1,0 +1,71 @@
+table, td{
+    border: 2px solid #333 ;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
+}
+
+/* aplicando regra de css ao terceiro elemento da lista, o 'filho' */
+/* nth-child(even) intervalo par nth-child(odd) numero impar */
+/* .lista li:nth-child(odd){
+    color: white;
+    background-color: lightskyblue;
+}
+.lista li:nth-child(even){
+    color: white;
+    background-color: lightgray;
+} */
+/* .lista li:first-child{
+    color: green;
+} */
+/* .lista li:last-child{
+    color: blue
+}
+.lista li:nth-child(2){
+    color: purple;
+} */
+table tr:first-child{
+    background-color: lightgrey;
+}
+
+tr#row4{
+    color: red;
+}
+
+table tr:nth-child(2) td:nth-child(3),
+table tr:nth-child(3) td:nth-child(3),
+table tr:nth-child(2) td:nth-child(5),
+table tr:nth-child(2) td:nth-child(6),
+table tr:nth-child(3) td:nth-child(6)
+{
+    background-color: gray;
+}
+
+table tr:nth-child(2) td:nth-child(1),
+table tr:nth-child(3) td:nth-child(1),
+table tr:nth-child(4) td:nth-child(1),
+table tr:nth-child(5) td:nth-child(1),
+table tr:nth-child(6) td:nth-child(1)
+{
+    background-color: lightgrey;
+}
+
+
+.lista li:hover{
+    color: black;
+}
+
+/* exigindo que seja filho direto */
+main > ul > li{
+    font-size: 16px;
+}
+/* pseduo-elemento */
+/* pode ser ::before ou ::after */
+main > h1::after{
+    content: " dos Horário";
+    color: black;
+}
+.att::before{
+    content: "\2713  ";
+    color: red;
+}
