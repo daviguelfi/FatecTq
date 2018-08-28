@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+.caixas{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+.caixa{
+    width: 280px;
+    height: 280px;
+    border: 1px solid #333;
+    float: left;
+    margin: 20px;
+}
+.clear{
+    clear: both;
+}
+/* mudar css de acordo com o tamanho da tela 
+   max->quando diminui a tela | min->quando aumenta a tela */
+@media(min-width:600px){
+    .caixa{
+        width: 31%;
+        margin: 1%;
+    }
+}
+@media(min-width:640px){
+    .caixa{
+        background-color: aquamarine;
+    }
+}

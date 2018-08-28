@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+.form{
+    margin: 10px;
+}
+.button{
+    margin: 20px;
+}
+.caixas{
+    /* border-top: 2px solid #333; */
+    /* border-bottom: 2px solid #333; */
+    min-height: 100%;
+    display: flex;
+    /* row | row-reverse | column | column-reverse */
+    flex-direction: row;
+    /* para quebrar os itens -> nowrap | wrap | wrap-reverse */
+    flex-wrap: wrap;
+    /* flex-start|flex-end|center|space-between|space-around|space-evenly */
+    justify-content: space-between;
+    /* flex-start | flex-end | center | stretch | baseline  */
+    align-items: center;
+}
+.caixa{
+    color: red;
+    background-color: #ccc;
+    width: 280px;
+    height: 280px;
+    margin: 5px;
+}
+.caixa img{
+    width: 200px;
+}
+
+.centro{
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.esquerda{
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1px;
+}
+.direita{
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1px;
+}
